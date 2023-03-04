@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Mustang'),
 
     /*
     |--------------------------------------------------------------------------
@@ -183,18 +183,8 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Package Service Providers...
+         * NOTE: all packages service providers must be registered inside their container's main service providers.
          */
-
-        /*
-         * Application Service Providers...
-         */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-
     ],
 
     /*
@@ -209,6 +199,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        // NOTE: all packages aliases must be registered inside their containers service providers
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 

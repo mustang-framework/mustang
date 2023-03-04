@@ -1,0 +1,6 @@
+{
+    "name": "mustang-framework/user",
+    "description": "Mustang Container.",
+    "type": "mustang-container",
+    "require": {}
+}

@@ -1,0 +1,21 @@
+{
+    "name": "mustang-framework/ship",
+    "description": "Mustang Ship folder where shared functionality resides",
+    "require": {
+        "mustang-framework/core": "^10.0.0",
+        "mustang-framework/documentation-generator-container": "^10.0.0",
+        "mustang-framework/welcome-container": "^10.0.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "barryvdh/laravel-ide-helper": "^2.13.0",
+        "barryvdh/laravel-debugbar": "^3.8.0"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta"
+        ]
+    }
+}

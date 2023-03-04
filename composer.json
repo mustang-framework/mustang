@@ -1,24 +1,57 @@
 {
-    "name": "laravel/laravel",
+    "name": "mustang-framework/mustang",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "A flawless framework for building scalable and testable API-Centric Apps with PHP and Laravel.",
+    "keywords": [
+        "Mustang",
+        "API",
+        "Framework",
+        "API framework",
+        "API Starter",
+        "PHP API Starter",
+        "Laravel API",
+        "PHP",
+        "Porto",
+        "Porto SAP"
+    ],
     "license": "MIT",
+    "homepage": "https://mustang-framework.github.io/",
+    "support": {
+        "issues": "https://github.com/mustang-framework/mustang/issues",
+        "source": "https://github.com/mustang-framework/mustang"
+    },
+    "authors": [
+        {
+            "name": "Aboozar Ghaffari",
+            "email": "aboozar.ghf@gmail.com"
+        }
+    ],
     "require": {
         "php": "^8.1",
+        "ext-curl": "*",
+        "ext-gettext": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "ext-sodium": "*",
+        "ext-tokenizer": "*",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
-        "laravel/sanctum": "^3.2",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "wikimedia/composer-merge-plugin": "^2.0.1"
     },
     "require-dev": {
+        "ext-intl": "*",
+        "ext-json": "*",
+		"friendsofphp/php-cs-fixer": "^3.8.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.0",
-        "spatie/laravel-ignition": "^2.0"
+        "spatie/laravel-ignition": "^2.0",
+		"vimeo/psalm": "^5.0"
     },
     "autoload": {
         "psr-4": {
@@ -28,9 +61,7 @@
         }
     },
     "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
+        "psr-4": {}
     },
     "scripts": {
         "post-autoload-dump": [
@@ -50,6 +81,18 @@
     "extra": {
         "laravel": {
             "dont-discover": []
+        },
+        "merge-plugin": {
+            "include": [
+                "app/Ship/composer.json",
+                "app/Containers/*/*/composer.json"
+            ],
+            "recurse": true,
+            "replace": false,
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": true
         }
     },
     "config": {
@@ -57,6 +100,9 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+            "mustang-framework/container-installer": true,
+            "composer/package-versions-deprecated": true,
+            "wikimedia/composer-merge-plugin": true,
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
         }

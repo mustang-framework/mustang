@@ -1,0 +1,11 @@
+{
+    "name": "mustang-framework/authentication",
+    "description": "Mustang Container.",
+    "type": "mustang-container",
+    "require": {
+        "laravel/passport": "^11.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    }
+}
