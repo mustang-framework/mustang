@@ -1,66 +1,114 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-banner.png" alt="Mustang Banner" width="800">
+    </a><br/>
+    PHP Framework for building scalable and maintainable API's on top of Laravel.
 </p>
 
-## About Laravel
+## About Mustang
+It is designed to help you build scalable PHP API's faster, by providing tools and functionalities that facilitates the development of any API-Centric App.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Mustang integrated the best Laravel compatible tools, packages and conventions in a very creative way, to deliver a rich set of features for a modern PHP Application.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+    <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-button.png" alt="Mustang Banner" width="260">
+    </a><br/>
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Features
+* [SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture) (Service Oriented Architecture) compatible.
+* Inherits concepts from the [DDD](https://en.wikipedia.org/wiki/Domain-driven_design) (Domain Driven Design).
+* [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (Model View Controller).
+* [ADR](https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder) (Action Domain Responder) architectures.
+* Modular / **Containerized** structure.
+* Great option for medium to large sized web projects.
+* List of convenient design principles such as **SOLID**, **OOP**, **LIFT**, **DRY**, **CoC**, **GRASP**, Generalization, High Cohesion and Low Coupling.
 
-## Learning Laravel
+## Documentation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Mustang** is built using the new architectural pattern **[Porto](https://github.com/Mahmoudz/Porto)**.
+> **Porto SAP** is a modern Software Architectural Pattern, designed to help developers organize their Code in a super maintainable way. It is very helpful for big and long term projects, as they tend to have higher complexity with time.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+It's completely **optional** to build your application using the Porto architecture.
+Alternatively, you can build it using the MVC architecture, and still benefit from all the features of Mustang.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<p align="center">
+    <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-button.png" alt="Mustang Banner" width="260">
+    </a><br/>
+</p>
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## [Typical Container Structure](https://github.com/Mahmoudz/Porto#typical-container-structure)
+```
+Container
+	├── Actions
+	├── Tasks
+	├── Models
+	├── Values
+	├── Events
+	├── Listeners
+	├── Policies
+	├── Exceptions
+	├── Contracts
+	├── Traits
+	├── Jobs
+	├── Notifications
+	├── Providers
+	├── Configs
+	├── Mails
+	│   ├── Templates	
+	├── Data
+	│   ├── Migrations
+	│   ├── Seeders
+	│   ├── Factories
+	│   ├── Criteria
+	│   ├── Repositories
+	│   ├── Validators
+	│   ├── Transporters
+	│   └── Rules
+	├── Tests
+	│   ├── Unit
+	│   └── Traits
+	└── UI
+	    ├── API
+	    │   ├── Routes
+	    │   ├── Controllers
+	    │   ├── Requests
+	    │   ├── Transformers
+	    │   └── Tests
+	    │       └── Functional
+	    ├── WEB
+	    │   ├── Routes
+	    │   ├── Controllers
+	    │   ├── Requests
+	    │   ├── Views
+	    │   └── Tests
+	    │       └── Acceptance
+	    └── CLI
+	        ├── Routes
+	        ├── Commands
+	        └── Tests
+	            └── Functional
+```
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Thank you for considering contributing to the Mustang framework! The contribution guide can be found in the [Mustang documentation](https://github.com/mustang-framework/mustang/wiki/Contributions).
 
 ## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+In order to ensure that the Mustang community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Laravel, please send an e-mail to Aboozar Ghaffari via [abooazr.ghf@gmail.com](mailto:abooazr.ghf@gmail.com). All security vulnerabilities will be promptly addressed.
+## Credits
+
+* [Laravel](https://laravel.com/)
+* [Porto](https://github.com/Mahmoudz/Porto)
+* [Apiato](http://apiato.io/)
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Mustang framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
