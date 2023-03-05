@@ -2,14 +2,15 @@
     <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
         <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-banner.png" alt="Mustang Banner" width="680">
     </a><br/>
-    PHP Framework for building scalable and maintainable API's on top of Laravel.
+    <b>PHP Framework for building scalable and maintainable API's on top of Laravel.</b>
 </p>
 
 ## About Mustang
-It is designed to help you build scalable PHP API's faster, by providing tools and functionalities that facilitates the development of any API-Centric App.
+Mustang is designed to help you build scalable PHP API's faster, by providing tools and functionalities that facilitates the development of any API-Centric App.
 
 Mustang integrated the best Laravel compatible tools, packages and conventions in a very creative way, to deliver a rich set of features for a modern PHP Application.
 
+Obviously, Mustang is suitable for the medium or large project and if 
 <p align="center">
     <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
         <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-button.png" alt="Mustang Banner" width="260">
@@ -34,8 +35,8 @@ It's completely **optional** to build your application using the Porto architect
 Alternatively, you can build it using the MVC architecture, and still benefit from all the features of Mustang.
 
 A Mustang application concluded three main layer according the Porto structure:
-* Ocean (Framework Layer)<br>
-* Ship (Shared Later between different containers)<br>
+* Ocean (Framework Layer)
+* Ship (Shared layer between different containers)
 * Container (Isolated Layer/Service)
 
 <p align="center">
@@ -117,6 +118,12 @@ Container
 
 Thank you for considering contributing to the Mustang framework! The contribution guide can be found in the [Mustang documentation](https://github.com/mustang-framework/mustang/wiki/Contributions).
 
+## Sponsors
+To make a donation click on this button
+<a target="_blank" href="https://monzo.me/aboozarghaffari">
+  <img src="https://www.cdtm.de/wp-content/uploads/2022/03/monzo-logo.png" style="background-color: white; padding:2px 5px; border:1px solid gray" width="100"  alt="Monzo"/>
+</a>
+
 ## Code of Conduct
 
 In order to ensure that the Mustang community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
@@ -128,7 +135,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 * [Laravel](https://laravel.com/)
 * [Porto](https://github.com/Mahmoudz/Porto)
-* [Apiato](http://apiato.io/)
+* [Apiato](https://apiato.io/)
 
 ## License
 
