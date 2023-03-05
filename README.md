@@ -10,7 +10,7 @@ Mustang is designed to help you build scalable PHP API's faster, by providing to
 
 Mustang integrated the best Laravel compatible tools, packages and conventions in a very creative way, to deliver a rich set of features for a modern PHP Application.
 
-Obviously, Mustang is suitable for the medium or large project and if 
+Basically, Mustang has developed to handle complexity and is suitable for medium or large projects and if you have a plan to develop a small or simple project, Mustang will not be a good framework for your project.
 <p align="center">
     <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
         <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-button.png" alt="Mustang Banner" width="260">
