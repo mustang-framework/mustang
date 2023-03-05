@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
-        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-banner.png" alt="Mustang Banner" width="600">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-banner.png" alt="Mustang Banner" width="680">
     </a><br/>
     PHP Framework for building scalable and maintainable API's on top of Laravel.
 </p>
@@ -40,7 +40,7 @@ A Mustang application concluded three main layer according the Porto structure:
 
 <p align="center">
     <a href="https://github.com/Mahmoudz/Porto" target="_blank">
-        <img src="https://f005.backblazeb2.com/file/mustang-framework/Containerschiff.svg" alt="Mustang Banner" width="600">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/Containerschiff-text.png" alt="Mustang Architecture" width="500">
     </a><br/>
 </p>
 
