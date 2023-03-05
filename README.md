@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
-        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-banner.png" alt="Mustang Banner" width="800">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-banner.png" alt="Mustang Banner" width="600">
     </a><br/>
     PHP Framework for building scalable and maintainable API's on top of Laravel.
 </p>
@@ -33,13 +33,28 @@ Mustang integrated the best Laravel compatible tools, packages and conventions i
 It's completely **optional** to build your application using the Porto architecture.
 Alternatively, you can build it using the MVC architecture, and still benefit from all the features of Mustang.
 
+A Mustang application concluded three main layer according the Porto structure:
+* Ocean (Framework Layer)<br>
+* Ship (Shared Later between different containers)<br>
+* Container (Isolated Layer/Service)
+
 <p align="center">
-    <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
-        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-button.png" alt="Mustang Banner" width="260">
+    <a href="https://github.com/Mahmoudz/Porto" target="_blank">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/Containerschiff.svg" alt="Mustang Banner" width="600">
     </a><br/>
 </p>
 
-## [Typical Container Structure](https://github.com/Mahmoudz/Porto#typical-container-structure)
+```
+Laravel Framework 
+    └── Mustang Application
+        ├── Ship 
+        └── Container(s)
+            ├── App Section Containers
+            └── Vendor Containers
+    
+```
+
+### [Typical Container Structure](https://github.com/Mahmoudz/Porto#typical-container-structure)
 ```
 Container
 	├── Actions
@@ -91,6 +106,12 @@ Container
 	        └── Tests
 	            └── Functional
 ```
+
+<p align="center">
+    <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-button.png" alt="Mustang Banner" width="260">
+    </a><br/>
+</p>
 
 ## Contributing
 
