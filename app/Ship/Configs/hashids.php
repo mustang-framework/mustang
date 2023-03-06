@@ -39,7 +39,7 @@ return [
 
         'main' => [
             'salt' => env('HASH_ID_KEY', env('APP_KEY')),
-            'length' => env('HASH_ID_LENGTH', 32),
+            'length' => (int) env('HASH_ID_LENGTH', 32),
             'alphabet' => 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',
         ],
 

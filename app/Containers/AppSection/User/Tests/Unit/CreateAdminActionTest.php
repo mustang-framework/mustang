@@ -3,6 +3,7 @@
 namespace App\Containers\AppSection\User\Tests\Unit;
 
 use App\Containers\AppSection\User\Actions\CreateAdminAction;
+use App\Containers\AppSection\User\Models\User;
 use App\Containers\AppSection\User\Tests\TestCase;
 use Exception;
 

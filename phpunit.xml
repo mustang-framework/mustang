@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
-         bootstrap="vendor/autoload.php"
-         colors="true"
->
-    <testsuites>
-        <testsuite name="Unit">
-            <directory suffix="Test.php">./tests/Unit</directory>
-        </testsuite>
-        <testsuite name="Feature">
-            <directory suffix="Test.php">./tests/Feature</directory>
-        </testsuite>
-    </testsuites>
-    <coverage>
-        <include>
-            <directory suffix=".php">./app</directory>
-        </include>
-    </coverage>
-    <php>
-        <env name="APP_ENV" value="testing"/>
-        <env name="BCRYPT_ROUNDS" value="4"/>
-        <env name="CACHE_DRIVER" value="array"/>
-        <!-- <env name="DB_CONNECTION" value="sqlite"/> -->
-        <!-- <env name="DB_DATABASE" value=":memory:"/> -->
-        <env name="MAIL_MAILER" value="array"/>
-        <env name="QUEUE_CONNECTION" value="sync"/>
-        <env name="SESSION_DRIVER" value="array"/>
-        <env name="TELESCOPE_ENABLED" value="false"/>
-    </php>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd" bootstrap="vendor/autoload.php" colors="true" cacheDirectory=".phpunit.cache">
+  <testsuites>
+    <testsuite name="Unit">
+      <directory suffix=".php">./app/Containers/*/*/Tests/Unit</directory>
+    </testsuite>
+    <testsuite name="Functional">
+      <directory suffix=".php">./app/Containers/*/*/UI/*/Tests/Functional</directory>
+    </testsuite>
+    <testsuite name="Ship-Unit">
+      <directory suffix=".php">./app/Ship/Tests</directory>
+    </testsuite>
+  </testsuites>
+  <coverage>
+    <include>
+      <directory suffix=".php">./app</directory>
+    </include>
+    <exclude>
+      <directory suffix=".php">./app/Containers/Vendor</directory>
+      <!-- NOTE: Exclude the following directories because they fail when directly included with code-coverage-->
+      <directory suffix=".php">./app/Containers/*/UI/*/Routes</directory>
+      <directory suffix=".php">./app/Containers/*/Data/Factories</directory>
+    </exclude>
+  </coverage>
+  <php>
+    <env name="API_FULL_URL" value="http://api.mustang.test"/>
+    <server name="APP_ENV" value="testing"/>
+    <server name="BCRYPT_ROUNDS" value="4"/>
+    <server name="CACHE_DRIVER" value="array"/>
+    <!-- <env name="DB_CONNECTION" value="sqlite"/> -->
+    <!-- <env name="DB_DATABASE" value=":memory:"/> -->
+    <env name="DB_CONNECTION" value="mysql"/>
+    <env name="DB_DATABASE" value="mustang_test"/>
+    <env name="DB_USERNAME" value="root"/>
+    <env name="DB_PASSWORD" value="1234"/>
+    <server name="MAIL_MAILER" value="array"/>
+    <server name="QUEUE_CONNECTION" value="sync"/>
+    <server name="SESSION_DRIVER" value="array"/>
+  </php>
 </phpunit>

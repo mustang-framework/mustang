@@ -42,11 +42,12 @@ class ApiRefreshProxyForWebClientTest extends ApiTestCase
         $response = $this->makeCall($data);
 
         $response->assertStatus(422);
+
         $response->assertJson(
             fn (AssertableJson $json) => $json->hasAll(['message', 'errors' => 1])
                 ->has(
                     'errors',
-                    fn (AssertableJson $json) => $json->where('refresh_token.0', 'The refresh token must be a string.')
+                    fn (AssertableJson $json) => $json->where('refresh_token.0', 'The refresh token field must be a string.')
                 )
         );
     }
