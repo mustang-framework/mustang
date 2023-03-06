@@ -41,7 +41,7 @@ A Mustang application concluded three main layer according the Porto structure:
 
 <p align="center">
     <a href="https://github.com/Mahmoudz/Porto" target="_blank">
-        <img src="https://f005.backblazeb2.com/file/mustang-framework/Containerschiff-text.png" alt="Mustang Architecture" width="500">
+        <img src="https://f005.backblazeb2.com/file/mustang-framework/Containerschiff-text.png?v2" alt="Mustang Architecture" width="500">
     </a><br/>
 </p>
 
