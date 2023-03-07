@@ -19,7 +19,7 @@ Basically, Mustang has developed to handle complexity and is suitable for medium
 
 ## Infrastructure
 * Laravel **10.x**
-* Apiato  10.x (Laravel 9) - Fixed incompatibilities with Laravel v10
+* Apiato  11.x (Laravel 9) - Fixed incompatibilities with Laravel v10
 * Please use the **main** branch until final release of Mustang v10
 
 ## Features
