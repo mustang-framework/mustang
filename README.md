@@ -17,6 +17,11 @@ Basically, Mustang has developed to handle complexity and is suitable for medium
     </a><br/>
 </p>
 
+## Infrastructure
+* Laravel **10.x**
+* Apiato  10.x (Laravel 9) - Fixed incompatibilities with Laravel v10
+* Please use the **main** branch until final release of Mustang v10
+
 ## Features
 * [SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture) (Service Oriented Architecture) compatible.
 * Inherits concepts from the [DDD](https://en.wikipedia.org/wiki/Domain-driven_design) (Domain Driven Design).
@@ -25,6 +30,40 @@ Basically, Mustang has developed to handle complexity and is suitable for medium
 * Modular / **Containerized** structure.
 * Great option for medium to large sized web projects.
 * List of convenient design principles such as **SOLID**, **OOP**, **LIFT**, **DRY**, **CoC**, **GRASP**, Generalization, High Cohesion and Low Coupling.
+
+## Installation
+
+#### Manual Installation
+
+``` bash
+# Clone the project
+git clone git@github.com:mustang-framework/mustang.git
+
+# Goto cloned folder
+cd mustang
+
+# Install project dependencies
+composer install
+
+# Create projects environment file
+cp .env.example .env
+# Update your .env file and set the DB config, Project URL, blah, blah, ...
+# Add your domains eg. mustang.test & api.mustang.test to your /etc/hosts file (IF REQUIRED)
+
+# Open the set url in the browser eg. 
+    http://mustang.test for web view
+    http://api.mustang.test for api view
+# You should see the following default pages/outputs
+# Ready to code ;)
+```
+<div>
+ <img src="https://f005.backblazeb2.com/file/mustang-framework/mustang-web.png" alt="Mustang WEB" width="400">
+  <img src="https://f005.backblazeb2.com/file/mustang-framework/mustang-api.png" alt="Mustang WEB" width="400">
+</div>
+
+#### Docker Installation
+
+Will be added soon
 
 ## Documentation
 
