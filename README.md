@@ -173,7 +173,7 @@ In order to ensure that the Mustang community is welcoming to all, please review
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Aboozar Ghaffari via [aboozar.ghf@gmail.com](mailto:aboozar.ghf@gmail.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Mustang, please send an e-mail to Aboozar Ghaffari via [aboozar.ghf@gmail.com](mailto:aboozar.ghf@gmail.com). All security vulnerabilities will be promptly addressed.
 ## Credits
 
 * [Laravel](https://laravel.com/)
