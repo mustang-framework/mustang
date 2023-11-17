@@ -1,21 +1,21 @@
 <p align="center">
-    <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
+    <a href="https://mustang.kingcode.ovh" target="_blank">
         <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-banner.png" alt="Mustang Banner" width="680">
     </a><br/>
     <b>PHP Framework for building scalable and maintainable API's on top of Laravel.</b>
 </p>
 
 ## About Mustang
-Mustang is designed to help you build scalable PHP API's faster, by providing tools and functionalities that facilitates the development of any API-Centric App.
+Mustang is designed to help you build scalable PHP APIs faster, by providing tools and functionalities that facilitate the development of any API-Centric App.
 
-Mustang integrated the best Laravel compatible tools, packages and conventions in a very creative way, to deliver a rich set of features for a modern PHP Application.
+Mustang integrated the best Laravel-compatible tools, packages, and conventions in a very creative way, to deliver a rich set of features for a modern PHP Application.
 
 Basically, Mustang has developed to handle complexity and is suitable for medium or large projects and if you have a plan to develop a small or simple project, Mustang will not be a good framework for your project.
 
  If you like **Mustang Framework**, give it a ⭐️ please
 
 <p align="center">
-    <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
+    <a href="https://mustang.kingcode.ovh" target="_blank">
         <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-button.png" alt="Mustang Banner" width="260">
     </a><br/>
 </p>
@@ -52,11 +52,11 @@ composer install
 # Create projects environment file
 cp .env.example .env
 # Update your .env file and set the DB config, Project URL, blah, blah, ...
-# Add your domains eg. mustang.test & api.mustang.test to your /etc/hosts file (IF REQUIRED)
+# Add your domains eg. mustang. test & API.mustang.test to your /etc/hosts file (IF REQUIRED)
 
-# Open the set url in the browser eg. 
+# Open the set URL in the browser eg. 
     http://mustang.test for web view
-    http://api.mustang.test for api view
+    http://api.mustang.test for API view
 # You should see the following default pages/outputs
 # Ready to code ;)
 ```
@@ -75,9 +75,9 @@ Will be added soon
 > **Porto SAP** is a modern Software Architectural Pattern, designed to help developers organize their Code in a super maintainable way. It is very helpful for big and long term projects, as they tend to have higher complexity with time.
 
 It's completely **optional** to build your application using the Porto architecture.
-Alternatively, you can build it using the MVC architecture, and still benefit from all the features of Mustang.
+Alternatively, you can build it using the MVC architecture and still benefit from all the features of Mustang.
 
-A Mustang application concluded three main layer according the Porto structure:
+A Mustang application concluded three main layers according the Porto structure:
 * Ocean (Framework Layer)
 * Ship (Shared layer between different containers)
 * Container (Isolated Layer/Service)
@@ -152,7 +152,7 @@ Container
 ```
 
 <p align="center">
-    <a href="https://github.com/mustang-framework/mustang/wiki" target="_blank">
+    <a href="https://mustang.kingcode.ovh" target="_blank">
         <img src="https://f005.backblazeb2.com/file/mustang-framework/mustan-button.png" alt="Mustang Banner" width="260">
     </a><br/>
 </p>
