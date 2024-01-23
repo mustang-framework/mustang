@@ -1,0 +1,63 @@
+version: "3.8"
+
+services:
+
+  #nginx
+  nginx:
+    image: nginx:latest
+    container_name: mustang-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+      - ./:/var/www
+
+  #app
+  app:
+    container_name: mustang-app
+    build:
+      args:
+        user: mustang-user
+        uid: 1000
+      context: .
+      dockerfile: ./docker/Dockerfile
+      network: host
+
+    volumes:
+      - .:/var/www
+
+  #mysql
+  db:
+    image: mysql:8.0
+    container_name: mustang-db
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init/db:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_DATABASE}
+
+  #phpmyadmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: mustang-phpmyadmin
+    depends_on:
+      - db
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      PMA_HOST: mustang-db
+      MYSQL_ROOT_PASSWORD:  ${DB_ROOT_PASSWORD}
+    ports:
+      - "80:80"
+
+volumes:
+  mysql_data:
